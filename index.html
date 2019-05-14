@@ -276,7 +276,7 @@
 <li>如果父线程的inheritableThreadLocals不为空，就跑到if中去。当然这里肯定是不为空的，我们上面已经说了，调用InheritableThreadLocal中的set方法，直接操作的是inheritableThreadLocals，if中做了什么，就是传入了父线程的inheritableThreadLocals，创建了新的ThreadLocalMap，赋值给Thead实例的inheritableThreadLocals，这样子线程就拥有了父线程的ThreadLocalMap，也就完成了ThreadLocal的继承与传递。</li>
 </ol>
 <p>这篇博客到这里就结束了，东西还是挺多的，但是都是挺重要的，特别是ThreadLocal的原因和产生内存泄露的原因和避免的方法。</p>
-<p>本文章完全copy<a href="https://juejin.im/post/5cd820dff265da03594890fb；" target="_blank" rel="noopener">https://juejin.im/post/5cd820dff265da03594890fb；</a></p>
+<p>本文章完全copy<a href="https://juejin.im/post/5cd820dff265da03594890fb" target="_blank" rel="noopener">https://juejin.im/post/5cd820dff265da03594890fb</a></p>
 <p>只是为了练习markdown语法；</p>
 
       
